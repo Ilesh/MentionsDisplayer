@@ -1,6 +1,6 @@
 # MentionDisplayer
 
-MentionDisplayer is one helpfull for the display mention user list with the filter user list.
+MentionDisplayer is helpfull for the display mention user list with the filter.
 
 ## Getting Started
 
