@@ -18,8 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2NM-FA-ZQt">
+                                <rect key="frame" x="103" y="25" width="169" height="28"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZEV-lU-vjg">
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="29"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <segments>
+                                            <segment title="Normal List"/>
+                                            <segment title="Avatar List"/>
+                                        </segments>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <connections>
+                                            <action selector="sgmChagneValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="U7A-Rg-x42"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZEV-lU-vjg" secondAttribute="trailing" id="0hH-5u-ovn"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZEV-lU-vjg" secondAttribute="bottom" id="4Sz-g1-Pwu"/>
+                                    <constraint firstItem="ZEV-lU-vjg" firstAttribute="top" secondItem="2NM-FA-ZQt" secondAttribute="top" id="7dF-dc-utC"/>
+                                    <constraint firstItem="ZEV-lU-vjg" firstAttribute="leading" secondItem="2NM-FA-ZQt" secondAttribute="leading" id="dsE-XQ-2Eh"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mjp31-profile" translatesAutoresizingMaskIntoConstraints="NO" id="QAd-Gq-Hs1">
+                                <rect key="frame" x="15" y="73" width="74" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="2L6-uo-mdk"/>
+                                    <constraint firstAttribute="height" constant="74" id="ecJ-lD-LHM"/>
+                                </constraints>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="@ for show list :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dnz-np-29U">
-                                <rect key="frame" x="103" y="70" width="256" height="90"/>
+                                <rect key="frame" x="103" y="73" width="256" height="90"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="j4s-AQ-ri0"/>
@@ -29,7 +60,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="emailAddress"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaT-Q5-ApM">
-                                <rect key="frame" x="310" y="20" width="45" height="30"/>
+                                <rect key="frame" x="310" y="24" width="45" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="fog-E7-xAa"/>
                                 </constraints>
@@ -41,43 +72,25 @@
                                     <action selector="btnDoneClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HNb-UN-mwh"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZEV-lU-vjg">
-                                <rect key="frame" x="103" y="20" width="169" height="29"/>
-                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <segments>
-                                    <segment title="Normal List"/>
-                                    <segment title="Avatar List"/>
-                                </segments>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <connections>
-                                    <action selector="sgmChagneValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="U7A-Rg-x42"/>
-                                </connections>
-                            </segmentedControl>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mjp31-profile" translatesAutoresizingMaskIntoConstraints="NO" id="QAd-Gq-Hs1">
-                                <rect key="frame" x="15" y="70" width="74" height="74"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="74" id="2L6-uo-mdk"/>
-                                    <constraint firstAttribute="height" constant="74" id="ecJ-lD-LHM"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.099492914969999999" green="0.15376406910000001" blue="0.20746275780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Dnz-np-29U" firstAttribute="top" secondItem="QAd-Gq-Hs1" secondAttribute="top" id="0jE-9j-Fyd"/>
-                            <constraint firstItem="ZEV-lU-vjg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="K65-sW-bjb"/>
-                            <constraint firstItem="QAd-Gq-Hs1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="KnG-kA-wob"/>
+                            <constraint firstItem="2NM-FA-ZQt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HsA-Y5-CpM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uaT-Q5-ApM" secondAttribute="trailing" constant="20" id="LR2-vl-SCz"/>
-                            <constraint firstItem="uaT-Q5-ApM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PeT-FM-5Jj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dnz-np-29U" secondAttribute="trailing" constant="16" id="W4E-uM-obi"/>
+                            <constraint firstItem="QAd-Gq-Hs1" firstAttribute="top" secondItem="2NM-FA-ZQt" secondAttribute="bottom" constant="20" id="b4Z-i9-BEv"/>
                             <constraint firstItem="Dnz-np-29U" firstAttribute="leading" secondItem="QAd-Gq-Hs1" secondAttribute="trailing" constant="14" id="c1f-Vu-IjR"/>
+                            <constraint firstItem="2NM-FA-ZQt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="jsx-Wl-mNZ"/>
                             <constraint firstItem="uaT-Q5-ApM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="soy-7z-hYn"/>
                             <constraint firstItem="QAd-Gq-Hs1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="wQe-Jy-nhs"/>
-                            <constraint firstItem="ZEV-lU-vjg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zyD-Z1-Ld9"/>
+                            <constraint firstItem="uaT-Q5-ApM" firstAttribute="centerY" secondItem="2NM-FA-ZQt" secondAttribute="centerY" id="zqo-95-x5B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="imgProfile" destination="QAd-Gq-Hs1" id="XlY-3q-fhe"/>
+                        <outlet property="outerView" destination="2NM-FA-ZQt" id="P5q-Ni-dW3"/>
                         <outlet property="txtView" destination="Dnz-np-29U" id="Tox-52-RaJ"/>
                     </connections>
                 </viewController>

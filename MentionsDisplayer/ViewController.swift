@@ -12,17 +12,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var txtView: UITextView!
     @IBOutlet weak var imgProfile: UIImageView!
-    
+    @IBOutlet weak var outerView: UIView!
     var isProfileList : Bool! {
         didSet {
             if isProfileList {
                 MyDropDown.shared.ConfigureCoustomMentionList(viewDropDown: txtView, successBlock: { (index, arrResult, strSearchKey) in
                     let strName = arrResult[index]
                     if  strSearchKey == "@" {
-                        self.txtView.text.append("\(strName) ")
+                        self.txtView.insertText("\(strName) ")
                     }else{
                         self.txtView.text = self.txtView.text.replacingOccurrences(of: strSearchKey, with: "")
-                        self.txtView.text.append("@\(strName) ")
+                        self.txtView.insertText("@\(strName) ")
                     }
                 }) {
                     
@@ -31,10 +31,13 @@ class ViewController: UIViewController {
                 MyDropDown.shared.ConfigureMentionList(viewDropDown: txtView, successBlock: { (index, arrResult, strSearchKey) in
                     let strName = arrResult[index]
                     if  strSearchKey == "@" {
-                        self.txtView.text.append("\(strName) ")
+                        self.txtView.insertText("\(strName) ")
                     }else{
+                        //var selectedRange = self.txtView.selectedRange
+                        //selectedRange.location = selectedRange.location - strSearchKey.count
                         self.txtView.text = self.txtView.text.replacingOccurrences(of: strSearchKey, with: "")
-                        self.txtView.text.append("@\(strName) ")
+                         self.txtView.insertText("@\(strName) ")
+    
                     }
                     
                 }) {
@@ -44,8 +47,20 @@ class ViewController: UIViewController {
         }
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        outerView.layer.cornerRadius = 8.0
+        outerView.layer.borderColor = UIColor.white.cgColor
+        outerView.layer.borderWidth = 1
+        outerView.layer.masksToBounds = true
+        
         imgProfile.layer.cornerRadius = imgProfile.frame.size.width / 2
         imgProfile.layer.masksToBounds = true
         imgProfile.layer.borderWidth = 2.0

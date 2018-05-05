@@ -44,7 +44,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJc-Aw-fw5">
-                        <rect key="frame" x="106" y="50.5" width="240" height="0.0"/>
+                        <rect key="frame" x="0.0" y="50.5" width="346" height="0.0"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.5" id="QO8-Ux-lCJ"/>
@@ -59,7 +59,7 @@
                     <constraint firstAttribute="trailing" secondItem="lJc-Aw-fw5" secondAttribute="trailing" constant="29" id="W3V-KN-mNF"/>
                     <constraint firstItem="S4L-g8-zhS" firstAttribute="top" secondItem="qqL-rG-Sg9" secondAttribute="bottom" constant="3" id="XXc-UL-Ead"/>
                     <constraint firstItem="qqL-rG-Sg9" firstAttribute="top" secondItem="Kry-su-ndJ" secondAttribute="top" id="Zve-gd-sFz"/>
-                    <constraint firstItem="lJc-Aw-fw5" firstAttribute="leading" secondItem="aV5-rj-vyJ" secondAttribute="leading" constant="106" id="dtl-h5-Dob"/>
+                    <constraint firstItem="lJc-Aw-fw5" firstAttribute="leading" secondItem="aV5-rj-vyJ" secondAttribute="leading" id="dtl-h5-Dob"/>
                     <constraint firstItem="qqL-rG-Sg9" firstAttribute="leading" secondItem="Kry-su-ndJ" secondAttribute="trailing" constant="15" id="nsh-2c-gTU"/>
                     <constraint firstItem="Kry-su-ndJ" firstAttribute="leading" secondItem="aV5-rj-vyJ" secondAttribute="leading" constant="15" id="oiU-Vg-gAf"/>
                     <constraint firstItem="Kry-su-ndJ" firstAttribute="top" secondItem="aV5-rj-vyJ" secondAttribute="top" constant="5" id="pUx-yS-dpX"/>
