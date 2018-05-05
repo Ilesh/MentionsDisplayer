@@ -320,6 +320,11 @@ public final class DropDown: UIView {
 		didSet { reloadAllComponents() }
 	}
     
+    
+    @objc public dynamic var isFullWidth = DPDConstant.UI.isFullWidth {
+        didSet { reloadAllComponents() }
+    }
+    
     /**
      The NIB to use for DropDownCells
      
@@ -675,9 +680,12 @@ extension DropDown {
 
 	fileprivate func computeLayoutBottomDisplay(window: UIWindow) -> ComputeLayoutTuple {
 		var offscreenHeight: CGFloat = 0
-		
-		let width = self.width ?? (anchorView?.plainView.bounds.width ?? fittingWidth()) - bottomOffset.x
-		
+        
+		var width = self.width ?? (anchorView?.plainView.bounds.width ?? fittingWidth()) - bottomOffset.x
+        if isFullWidth {
+           width =  window.bounds.size.width //self.width ?? (anchorView?.plainView.bounds.width ?? fittingWidth()) - bottomOffset.x
+        }
+        
 		let anchorViewX = anchorView?.plainView.windowFrame?.minX ?? window.frame.midX - (width / 2)
 		let anchorViewY = anchorView?.plainView.windowFrame?.minY ?? window.frame.midY - (tableHeight / 2)
 		
@@ -817,8 +825,9 @@ extension DropDown {
 		self.translatesAutoresizingMaskIntoConstraints = false
 		visibleWindow?.addUniversalConstraints(format: "|[dropDown]|", views: ["dropDown": self])
 
-		let layout = computeLayout()
-
+		var layout = computeLayout()
+        layout.width = 100
+        
 		if !layout.canBeDisplayed {
 			hide()
 			return (layout.canBeDisplayed, layout.offscreenHeight)

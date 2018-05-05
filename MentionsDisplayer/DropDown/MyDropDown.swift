@@ -24,7 +24,6 @@ class MyDropDown: NSObject {
         dropMentionUser.customCellConfiguration = { (index: Index, item: String, cell: DropDownCell) -> Void in
             guard let cell = cell as? MyCell else { return }
             cell.suffixLabel.text = item
-            cell.suffixLabel.textColor = .black
         }
         
         dropMentionUser.cancelAction = { [unowned self] in
@@ -44,6 +43,7 @@ class MyDropDown: NSObject {
         
         //FOR SET ACTUAL POSSITION
         dropMentionUser.direction = .bottom
+        dropMentionUser.separatorColor = UIColor.clear
         dropMentionUser.bottomOffset = CGPoint(x: 0, y:(dropMentionUser.anchorView?.plainView.bounds.height)!)
     }
     
@@ -74,6 +74,9 @@ class MyDropDown: NSObject {
             self.strSearchKey = ""
         }
         //FOR SET ACTUAL POSSITION
+        dropMentionUser.backgroundColor = #colorLiteral(red: 0.09949291497, green: 0.1537640691, blue: 0.2074627578, alpha: 1)
+        dropMentionUser.textColor = UIColor.white
+        dropMentionUser.separatorColor = UIColor.clear
         dropMentionUser.anchorView = viewDropDown
         dropMentionUser.direction = .bottom
         dropMentionUser.bottomOffset = CGPoint(x: 0, y:(dropMentionUser.anchorView?.plainView.bounds.height)!)

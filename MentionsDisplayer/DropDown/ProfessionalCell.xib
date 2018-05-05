@@ -32,23 +32,34 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqL-rG-Sg9">
-                        <rect key="frame" x="70" y="5" width="290" height="17"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                        <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="frame" x="70" y="5" width="290" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4L-g8-zhS">
-                        <rect key="frame" x="70" y="25" width="44.5" height="15"/>
+                        <rect key="frame" x="70" y="26" width="44.5" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <color key="textColor" red="0.6588235294" green="0.6705882353" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJc-Aw-fw5">
+                        <rect key="frame" x="106" y="50.5" width="240" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="QO8-Ux-lCJ"/>
+                        </constraints>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" red="0.099492914969999999" green="0.15376406910000001" blue="0.20746275780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lJc-Aw-fw5" secondAttribute="bottom" id="7cX-wA-q90"/>
                     <constraint firstAttribute="bottom" secondItem="Kry-su-ndJ" secondAttribute="bottom" constant="5" id="Lmr-pA-V2e"/>
                     <constraint firstAttribute="trailing" secondItem="qqL-rG-Sg9" secondAttribute="trailing" constant="15" id="OLa-kc-HkO"/>
+                    <constraint firstAttribute="trailing" secondItem="lJc-Aw-fw5" secondAttribute="trailing" constant="29" id="W3V-KN-mNF"/>
                     <constraint firstItem="S4L-g8-zhS" firstAttribute="top" secondItem="qqL-rG-Sg9" secondAttribute="bottom" constant="3" id="XXc-UL-Ead"/>
                     <constraint firstItem="qqL-rG-Sg9" firstAttribute="top" secondItem="Kry-su-ndJ" secondAttribute="top" id="Zve-gd-sFz"/>
+                    <constraint firstItem="lJc-Aw-fw5" firstAttribute="leading" secondItem="aV5-rj-vyJ" secondAttribute="leading" constant="106" id="dtl-h5-Dob"/>
                     <constraint firstItem="qqL-rG-Sg9" firstAttribute="leading" secondItem="Kry-su-ndJ" secondAttribute="trailing" constant="15" id="nsh-2c-gTU"/>
                     <constraint firstItem="Kry-su-ndJ" firstAttribute="leading" secondItem="aV5-rj-vyJ" secondAttribute="leading" constant="15" id="oiU-Vg-gAf"/>
                     <constraint firstItem="Kry-su-ndJ" firstAttribute="top" secondItem="aV5-rj-vyJ" secondAttribute="top" constant="5" id="pUx-yS-dpX"/>
@@ -61,7 +72,7 @@
                 <outlet property="lblSubTitle" destination="S4L-g8-zhS" id="VAN-Bf-Qhe"/>
                 <outlet property="lblTitle" destination="qqL-rG-Sg9" id="0kg-P0-Sht"/>
             </connections>
-            <point key="canvasLocation" x="-320" y="-27"/>
+            <point key="canvasLocation" x="-470" y="-28"/>
         </tableViewCell>
     </objects>
     <resources>

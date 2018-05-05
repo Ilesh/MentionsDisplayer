@@ -33,10 +33,14 @@ extension DropDown {
         appearance.cornerRadius = 0
         appearance.shadowColor = DPDConstant.UI.Shadow.Color
         appearance.animationduration = 0.10
-        dropdown.textColor = .black
-        dropdown.shadowColor = UIColor.clear
-        dropdown.shadowRadius = 0.0
-        dropdown.shadowOpacity = 0.0
+        appearance.textColor = .white
+        appearance.shadowColor = UIColor.clear
+        appearance.shadowRadius = 0.0
+        appearance.shadowOpacity = 0.0
+        appearance.isFullWidth = true
+        appearance.separatorColor = UIColor.black
+        dropdown.textColor = .white
+        dropdown.backgroundColor = #colorLiteral(red: 0.09949291497, green: 0.1537640691, blue: 0.2074627578, alpha: 1)
         DropDown.startListeningToKeyboard()        
     }
 }

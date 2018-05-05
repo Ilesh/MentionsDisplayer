@@ -11,15 +11,11 @@ import UIKit
 internal struct DPDConstant {
 
 	internal struct KeyPath {
-
 		static let Frame = "frame"
-
 	}
 
 	internal struct ReusableIdentifier {
-
 		static let DropDownCell = "DropDownCell"
-
 	}
 
 	internal struct UI {
@@ -32,14 +28,13 @@ internal struct DPDConstant {
 		static let CornerRadius: CGFloat = 2
 		static let RowHeight: CGFloat = 44
         static let HeightPadding: CGFloat = 10 //@@45371## 20
-
+        static let isFullWidth: Bool = false //@@45371## 20
+        
 		struct Shadow {
-
 			static let Color = UIColor.darkGray
 			static let Offset = CGSize.zero
 			static let Opacity: Float = 0.4
 			static let Radius: CGFloat = 8
-
 		}
 
 	}

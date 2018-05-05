@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var txtView: UITextView!
+    @IBOutlet weak var imgProfile: UIImageView!
     
     var isProfileList : Bool! {
         didSet {
@@ -45,6 +46,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imgProfile.layer.cornerRadius = imgProfile.frame.size.width / 2
+        imgProfile.layer.masksToBounds = true
+        imgProfile.layer.borderWidth = 2.0
+        imgProfile.layer.borderColor = UIColor.white.cgColor
+        
         txtView.delegate = self
         isProfileList = false
     }
@@ -59,7 +65,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnDoneClick(_ sender: Any) {
-        
+        txtView.resignFirstResponder()
     }
    
 }
