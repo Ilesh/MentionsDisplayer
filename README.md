@@ -2,6 +2,9 @@
 
 MentionDisplayer is helpfull for the display mention user list with the filter.
 
+![ezgif com-optimize](https://i.imgflip.com/29p0xi.gif)
+
+
 ## Getting Started
 
 Download the demo app and find the nessessory files for the demo project.
