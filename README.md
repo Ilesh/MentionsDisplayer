@@ -7,7 +7,7 @@ MentionDisplayer is helpfull for the display mention user list with the filter.
 
 ## Getting Started
 
-Download the demo app and find the nessessory files for the demo project.
+Download the demo app and find the necessary files for the demo project.
 
 
 ### Installing
@@ -22,7 +22,7 @@ Add source code:
 
 
 ## Usage
-It is very easy to used only simply put configure methods in your "ViewdidLoad" method. Please find below code.
+It is very easy to use only simply put configure methods in your "ViewdidLoad" method. Please find below code.
 
 ```
 MyDropDown.shared.ConfigureMentionList(viewDropDown: txtView, successBlock: { (index, arrResult, strSearchKey) in
@@ -38,7 +38,7 @@ MyDropDown.shared.ConfigureMentionList(viewDropDown: txtView, successBlock: { (i
 
 }
 ```
- After that implement textview or textField delegate methods for getting text for filtter the list.
+ After that, implement textview or textField delegate methods for getting text for filter the list.
 
 ```
 func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
@@ -54,10 +54,10 @@ return true
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Credits
 
-* Thanks to "AssistoLab" for Amazin Dropdown repo.
+* Thanks to "AssistoLab" for Amazing Dropdown repo.
 
 
