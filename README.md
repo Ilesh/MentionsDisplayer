@@ -57,7 +57,7 @@ return true
 
 ## Authors
 
-* **[Ilesh Panchal](https://github.com/ilesh)** - *Initial work*
+* **[Ilesh Panchal](https://github.com/ilesh)** 
 
 
 ## License
