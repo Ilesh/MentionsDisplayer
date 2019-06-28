@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtView: UITextView!
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var outerView: UIView!
+    
     var isProfileList : Bool! {
         didSet {
             if isProfileList {
@@ -53,8 +54,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        UIApplication.shared.statusBarStyle = .lightContent
         
         outerView.layer.cornerRadius = 8.0
         outerView.layer.borderColor = UIColor.white.cgColor

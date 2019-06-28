@@ -19,7 +19,6 @@
 		9A92CECA209D980500177084 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CEBE209D980500177084 /* DPDKeyboardListener.swift */; };
 		9A92CECB209D980500177084 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CEBF209D980500177084 /* DPDConstants.swift */; };
 		9A92CECC209D980500177084 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CEC0209D980500177084 /* DPDUIView+Extension.swift */; };
-		9A92CECD209D980500177084 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A92CEC1209D980500177084 /* Info.plist */; };
 		9A92CECE209D980500177084 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CEC3209D980500177084 /* DropDown.swift */; };
 		9A92CECF209D980500177084 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CEC4209D980500177084 /* DropDownCell.swift */; };
 		9A92CED0209D980500177084 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A92CEC5209D980500177084 /* DropDown+Appearance.swift */; };
@@ -43,7 +42,6 @@
 		9A92CEBE209D980500177084 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDKeyboardListener.swift; sourceTree = "<group>"; };
 		9A92CEBF209D980500177084 /* DPDConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPDConstants.swift; sourceTree = "<group>"; };
 		9A92CEC0209D980500177084 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DPDUIView+Extension.swift"; sourceTree = "<group>"; };
-		9A92CEC1209D980500177084 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A92CEC3209D980500177084 /* DropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		9A92CEC4209D980500177084 /* DropDownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownCell.swift; sourceTree = "<group>"; };
 		9A92CEC5209D980500177084 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropDown+Appearance.swift"; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				9A92CED1209D9B8E00177084 /* ProfessionalCell.swift */,
 				9A92CED2209D9B8E00177084 /* ProfessionalCell.xib */,
 				9A92CEB9209D980500177084 /* MyDropDown.swift */,
-				9A92CEC1209D980500177084 /* Info.plist */,
 			);
 			path = DropDown;
 			sourceTree = "<group>";
@@ -164,11 +161,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = self;
 				TargetAttributes = {
 					9A92CEA0209D965900177084 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -199,7 +197,6 @@
 				9A92CEAF209D965900177084 /* LaunchScreen.storyboard in Resources */,
 				9A92CED4209D9B8E00177084 /* ProfessionalCell.xib in Resources */,
 				9A92CEC8209D980500177084 /* MyCell.xib in Resources */,
-				9A92CECD209D980500177084 /* Info.plist in Resources */,
 				9A92CEAC209D965900177084 /* Assets.xcassets in Resources */,
 				9A92CEC9209D980500177084 /* DropDownCell.xib in Resources */,
 				9A92CEAA209D965900177084 /* Main.storyboard in Resources */,
@@ -263,6 +260,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -270,6 +268,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -320,6 +319,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -327,6 +327,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -360,17 +361,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = S64QSP95UG;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MentionsDisplayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.OnSourceInspection.;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.mentions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4e16709a-22ea-4c3f-99bb-65d635fd2179";
-				PROVISIONING_PROFILE_SPECIFIER = TotalVehicleInspectionEnterprise;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -379,17 +381,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = S64QSP95UG;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MentionsDisplayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.OnSourceInspection.;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.mentions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4e16709a-22ea-4c3f-99bb-65d635fd2179";
-				PROVISIONING_PROFILE_SPECIFIER = TotalVehicleInspectionEnterprise;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
