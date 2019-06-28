@@ -1,24 +1,26 @@
 # MentionDisplayer
 
 <p align="center">
-<img src="https://img.shields.io/badge/Swift-3.0-orange.svg" alt="Swift 3.0"/>
+<img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Swift 4.2"/>
 <img src="https://img.shields.io/badge/platform-iOS-brightgreen.svg" alt="Platform: iOS"/>
-<img src="https://img.shields.io/badge/Xcode-9%2B-brightgreen.svg" alt="XCode 9+"/>
-<img src="https://img.shields.io/badge/iOS-11%2B-brightgreen.svg" alt="iOS 11"/>
+<img src="https://img.shields.io/badge/Xcode-11%2B-brightgreen.svg" alt="XCode 11+"/>
+<img src="https://img.shields.io/badge/iOS-11%2B-brightgreen.svg" alt="iOS 11+"/>
 </a>
 </p>
 
-MentionDisplayer is helpfull for the display mention user list with the filter.
+In this demo project you can implement mention user like the twitter app. Here we're going to build a simple demo for mention user in the text. Here we can add user in the text and also the identify when we will send to the server whole text.
 
-![ezgif com-optimize](https://i.imgflip.com/29p0xi.gif)
-
+<p align="center">
+    <img src= "https://i.imgflip.com/29p0xi.gif" > 
+</p>
 
 ## Getting Started
 
-Download the demo app and find the necessary files for the demo project.
+Here download the sample project and get necessory files for your existing project or create new project. please check some steps and instruction below for implementing in your project.
 
+##### Note: I am assumes you are comfortable with the basics of storyboards and view controllers.
 
-### Installing
+## Installing
 
 A regular way to use DropDown in your project would be using Embedded Framework. There are two approaches, using source code and adding submodule.
 
@@ -54,10 +56,18 @@ func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replace
 return true
 }
 ```
+## Contributing
 
-## Authors
+- If you **need help** or you'd like to **ask a general question**, open an issue.
+- If you **found a bug**, open an issue.
+- If you **have a feature request**, open an issue.
+- If you **want to contribute**, submit a pull request.
 
-* **[Ilesh Panchal](https://github.com/ilesh)** 
+## 👨🏻‍💻 Author
+
+* **[Ilesh Panchal](https://twitter.com/ilesh_panchal)**
+
+<a href="https://www.buymeacoffee.com/dD9nr61qx" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/black_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 
 ## License
@@ -66,6 +76,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Credits
 
-* Thanks to "AssistoLab" for Amazing Dropdown repo.
+* Thanks to "AssistoLab" for Amazing **Dropdown** repo.
 
 
