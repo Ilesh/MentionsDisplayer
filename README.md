@@ -1,4 +1,4 @@
-# MentionDisplayer
+# Mention User
 
 <p align="center">
 <img src="https://img.shields.io/badge/Swift-4.2-brightgreen.svg" alt="Swift 4.2"/>
@@ -8,7 +8,8 @@
 </a>
 </p>
 
-In this demo project you can implement mention user like the twitter app. Here we're going to build a simple demo for mention user in the text. Here we can add user in the text and also the identify when we will send to the server whole text.
+## Let's start
+Here we're going to build a simple demo for mention user in the text. we can add user in the text and also the identify when we will send to the server whole text. It's working like the twitter mention user ;).
 
 <p align="center">
     <img src= "https://i.imgflip.com/29p0xi.gif" > 
